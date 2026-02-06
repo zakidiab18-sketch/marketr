@@ -1,0 +1,38 @@
+
+
+#title{
+
+text-align: center;
+background-color: #818389;
+
+
+color: rgb(51, 48, 48);
+ padding: 25px;
+ height: 100px;
+}
+ .order-btn:hover{
+
+cursor: pointer;
+background-color: bisque;
+
+ }
+ 
+
+  a {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+   #product_container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin-top: 40px;
+  }

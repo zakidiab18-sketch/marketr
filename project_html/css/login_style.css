@@ -1,0 +1,16 @@
+ body {
+text-align: center;
+ 
+
+ }
+ #contaner{
+   
+    color: aliceblue;
+width:90%;
+  max-width: 500px;
+  margin:120px auto;
+background-color: rgb(80, 49, 12);
+  padding: 25px;
+  border-radius: 15px;
+  
+ }

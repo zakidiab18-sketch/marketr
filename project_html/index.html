@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta keywords="html ,learn , teach ">
+  <link rel=" stylesheet" type=" text/css" href="css/bootstrap.css">
+  <title>Login Page</title>
+</head>
+
+
+
+
+</head>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  .form {
+
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .hide {
+    opacity: 0;
+    transform: translateX(100px);
+    pointer-events: none;
+  }
+
+  body {
+
+    font-family: 'Cairo', sans-serif;
+    min-height: 90vh;
+    background: linear-gradient(135deg, #d2d0d0, #e17799);
+
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  label {
+    padding: 4px;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  #regest {
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+
+  .login-card {
+    margin-top: 50px;
+    margin-left: 60px;
+    background: rgba(86, 35, 109, 0.76);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+
+    width: 1000px;
+    height: 500px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .half-1 {
+    width: ;
+    padding: 100px;
+padding-top: 50px;
+  }
+
+  .login-card .btn-custom-reg {
+    position: absolute;
+    top: 300px;
+    justify-self: center;
+  }
+
+  .login-card h3 {
+    margin-top: 10px;
+    text-align: start;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+
+  .form-control {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 200px;
+    color: #fff;
+  }
+
+
+
+
+
+  .btn-custom {
+    background: #302f2f;
+    color: #b8b4b6;
+    width: 200px;
+    font-weight: 600;
+    border-radius: 30px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .btn-custom-reg {
+    
+    align-items: end;
+    justify-content: end;
+  }
+
+  .half {
+    
+     background: linear-gradient(135deg, #1b2773, #c33764);
+    height: 500px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+    
+    .half:hover{
+     /* transform: translatez(100px); */
+     background: linear-gradient(1deg, #1b2773, #c33764);
+  }
+  #reg{
+    border-radius :100px; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4e4649;
+    border: 3px dashed ;
+  }
+
+  .span {
+
+    position: absolute;
+    top: 200px;
+    right: 150px;
+  }
+
+/* regester page */
+
+.r-container{
+background-color: rgb(144, 138, 138);
+width: 1000px;
+height: 500px;
+border-radius: 30px;
+margin: 60px 0 0 100px ;
+
+padding: 50px;
+}
+
+.r-input{
+border-radius: 10px;
+ background: rgba( 255, 255, 255,  0.2);
+ color: #fbfbfb;
+ border : 3px black  double ;
+
+}
+ .r-lable{
+color: white;
+font-weight: bold;
+
+
+
+ }
+
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="login" class="form show">
+
+
+      <div class="login-card">
+
+        <div class=" row">
+          <div class="col-6 half-1">
+
+            <div class="brand-wrapper">
+              <img src="photo/favicon.ico" width="40px" alt="logo" class="logo">
+            </div>
+
+
+            <h3>تسجيل الدخول</h3>
+            <label id="lab_username" for="email"> user name</label>
+            <input type="email" id="email" class="form-control" placeholder="البريد الإلكتروني" required>
+            <label id="lab_pass" for="password">password</label>
+            <input type="password" id="password" class="form-control" placeholder="كلمة المرور" required
+              autocomplete="current-password">
+            <button onclick="register()" class="btn-custom  ">دخول</button>
+
+          </div>
+
+          <div class="col-6 half">
+
+
+            <div class="span">
+              you dont have account ?
+            </div>
+            <div class="btn-custom-reg "> 
+            <button id="reg" onclick="showRegister()">registe now</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+
+  </div>
+   
+
+
+
+
+  <div id="register" class="form hide">
+    <div class="r-container">
+       <div class="r-contant">
+          <h3>تسجيل جديد</h3>
+         
+      
+       <label class="r-lable" for="full_name">full name</label> <br>
+          <input class="r-input" type="text" id= full_name"  ><br>
+         
+      
+       <label class="r-lable" for="r-email">Email</label><br>
+          <input class="r-input"    type="email"  id="r-email"  ><br>
+        <label class="r-lable" for="r-password"> password</label><br>
+          <input class="r-input" type="password" id="r-password"  ><br>
+         
+      
+          <button id="r-btn">تسجيل</button><br>
+        
+     
+        
+          <button class="switch" onclick="showlogin()">عندي حساب</button>
+        
+
+    </div>
+
+</div>
+
+
+  </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/busabase.js"></script>
+
+</html>

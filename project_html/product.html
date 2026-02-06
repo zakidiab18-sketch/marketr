@@ -1,0 +1,138 @@
+
+<DOCTYPE html>
+<html lang="ar">
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width, initial-scale=1">
+	<meta keywords="html ,learn , teach ">
+	 <link rel=" stylesheet" type =" text/css" href="css/style.css">
+	  
+	<title>  product_of_steel</title>
+</head>
+
+
+<body >
+	<div id="web">
+	 
+
+		<div id="title"> 
+          <h1>   we have alot of product  </h1>
+            <h1>of Steel </h1>
+   	</div>
+ 
+	
+
+
+
+<div id="product_container">
+
+
+ <div class="product1">
+  <img src=" photo/steel.jpg" alt="Rebar Steel" width="100">
+  <h3>12mm Reinforcement Steel</h3>
+  <p>Price: 2400 / ton</p>
+  <button class="order-btn"
+    data-name="12mm Reinforcement Steel"
+    data-price="2400 / ton"
+    data-image="steel.jpg">
+    Order Now
+  </button>
+</div>
+
+  <div class="product2">
+    <img src="photo/steel.jpg" alt="Rebar Steel" width="100">
+    <h3>14mm Reinforcement Steel</h3>
+    <p>Price: 2500 / ton</p>
+    <button class="order-btn"
+    data-name="14mm Reinforcement Steel"
+    data-price="2500 / ton"
+    data-image="steel.jpg">
+    Order Now
+  </button>
+  </div>
+
+  <div class="product3">
+    <img src="photo/steel.jpg" alt="Steel Bars" width="100">
+    <h3>16mm Steel Bars</h3>
+    <p>Price: 2650 / ton</p>
+   <button class="order-btn"
+    data-name="16mm Reinforcement Steel"
+    data-price="2650 / ton"
+    data-image="steel.jpg">
+    Order Now
+  </button>
+  </div>
+<div class="product5">
+    <img src="photo/angle-steel.jpg" alt="Angle Steel" width="100">
+    <h3>Angle Steel 30x30</h3>
+    <p>Price: 2000 / ton</p>
+    <button class="order-btn"
+    data-name="Angle Steel 30x30"
+    data-price="2000 / ton"
+    data-image="angle-steel.jpg">
+    Order Now
+  </button>
+  </div>
+  <div class="product4">
+    <img src="photo/angle-steel.jpg" alt="Angle Steel" width="100">
+    <h3>Angle Steel 40x40</h3>
+    <p>Price: 2200 / ton</p>
+    <button class="order-btn"
+    data-name="Angle Steel 40x40"
+    data-price="2200 / ton"
+    data-image="angle-steel.jpg">
+    Order Now
+  </button>
+  </div>
+
+<div class="product6">
+    <img src="photo/angle-steel.jpg" alt="Angle Steel" width="100">
+    <h3>Angle Steel 50x50</h3>
+    <p>Price: 2600 / ton</p>
+    <button class="order-btn"
+    data-name="Angle Steel 50x50"
+    data-price="2600 / ton"
+    data-image="angle-steel.jpg">
+    Order Now
+  </button>
+  </div>
+
+  <div class="product5">
+    <img src="photo/angle-steel.jpg" alt="Angle Steel" width="100">
+    <h3>Angle Steel 60x60</h3>
+    <p>Price: 2700₪ / ton</p>
+    <button class="order-btn"
+    data-name="Angle Steel 60x60"
+    data-price="2700 / ton"
+    data-image="angle-steel.jpg">
+    Order Now
+  </button>
+  </div>
+
+	</div>
+
+
+		<script>
+  const phone = "970569691494"
+
+ 
+  document.querySelectorAll('.order-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const name = button.dataset.name;
+      const price = button.dataset.price;
+      const image = window.location.origin + '/' + button.dataset.image;
+
+      const message = `Hello, I would like to order:%0A%0A🛒 *Product:* ${name}%0A💵 *Price:* ${price}%0A🖼 *Image:* ${image}%0A%0A`;
+
+      const link = `https://wa.me/${970569691494}?text=${message}`;
+      window.open(link, '_blank');
+    });
+  });
+</script>
+
+	</div>
+<a href="pro_f.html">
+  ← Back to Home
+</a>
+</body>
+</html>
